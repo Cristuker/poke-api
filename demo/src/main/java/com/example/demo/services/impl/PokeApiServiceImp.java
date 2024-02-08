@@ -22,12 +22,9 @@ public class PokeApiServiceImp implements PokeApiService {
         try {
             String url = POKEMON_API_URL + "/pokemon/"+ name;
             PokemonDto pokemonDto = restTemplate.getForObject(url, PokemonDto.class);
-            if (pokemonDto == null) {
-                throw new NotFoundException("Pokemon não encontrado");
-            }
             return pokemonDto;
         } catch (HttpClientErrorException ex) {
-            throw new BusinessException(ex.getLocalizedMessage());
+            throw new NotFoundException("Pokemon não encontrado");
         }
     }
 }
