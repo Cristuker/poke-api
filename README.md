@@ -10,3 +10,10 @@ API Java criada para consumir a [PokéAPI](https://pokeapi.co/).
 4. Execute usando a classe DemoApplication como classe principal
 5. Para rodar os testes basta ir na pasta `test` clicar com o botão direito e clicar em run all
 6. A API irá rodar na porta 8080 da sua máquina
+
+## O que vai encontrar nesse repositório
+* Teste uniários
+* Teste de integração
+* Teste e2e
+* Padrão Factory
+* Padrão Builder
